@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ucapan Spesial</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      background: #ffe6f0;
+      font-family: 'Arial', sans-serif;
+      overflow: hidden;
+    }
+    h1 {
+      font-size: 2.5em;
+      color: #333;
+      margin-top: 100px;
+      animation: fadeIn 3s ease-in-out;
+    }
+    p {
+      font-size: 1.2em;
+      margin: 20px;
+      color: #444;
+      animation: fadeIn 5s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .balloon {
+      position: absolute;
+      bottom: -150px;
+      width: 80px;
+      height: 100px;
+      background: pink;
+      border-radius: 50% 50% 50% 50%;
+      animation: rise 10s infinite ease-in;
+    }
+    @keyframes rise {
+      0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+      100% { transform: translateY(-100vh) rotate(360deg); opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+  <h1>🎉 Selamat Ulang Tahun 🎉</h1>
+  <p>Semoga hari-harimu selalu penuh kebahagiaan, kesehatan, dan rezeki yang lancar. 
+     Terus semangat ya, ada banyak orang yang sayang sama kamu 🤍</p>
+
+  <div class="balloon" style="left:10%; background:#ff9aa2;"></div>
+  <div class="balloon" style="left:30%; background:#ffdac1;"></div>
+  <div class="balloon" style="left:50%; background:#b5ead7;"></div>
+  <div class="balloon" style="left:70%; background:#c7ceea;"></div>
+  <div class="balloon" style="left:90%; background:#ffb7b2;"></div>
+</body>
+</html>
